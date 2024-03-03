@@ -35,7 +35,7 @@ app.post( '/auth/register', registerValidation, async (req, res)=>{
 
      const doc = new UserModel({
         email: req.body.email,
-        passwordHash,
+        password: passwordHash,
         fullName: req.body.fullname,
         avatarUrl: req.body.avatarUrl,
 
